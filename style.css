@@ -1,3 +1,7 @@
+/* ========================================
+   GENERAL
+======================================== */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -7,15 +11,17 @@
 body {
     font-family: Georgia, "Times New Roman", serif;
     color: #222;
-    background: #fff;
+    background: #ffffff;
     line-height: 1.7;
 }
 
 
-/* Navigation */
+/* ========================================
+   HEADER
+======================================== */
 
 .header {
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #dddddd;
 }
 
 .navigation {
@@ -28,12 +34,17 @@ body {
     align-items: center;
 }
 
+
+/* Your name */
+
 .logo {
     color: #222;
-    text-decoration: none;
     font-size: 21px;
     font-weight: bold;
 }
+
+
+/* Navigation links */
 
 .nav-links {
     display: flex;
@@ -41,43 +52,54 @@ body {
 }
 
 .nav-links a {
-    color: #555;
+    color: #555555;
     text-decoration: none;
-    font-family: Arial, sans-serif;
+
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
 }
 
 .nav-links a:hover {
-    color: #000;
+    color: #000000;
 }
 
 
-/* Introduction */
+/* ========================================
+   WELCOME / INTRODUCTION
+======================================== */
 
 .hero {
     max-width: 1050px;
     margin: 0 auto;
+
     padding: 90px 30px;
 
     display: grid;
     grid-template-columns: 1fr 320px;
+
     gap: 70px;
     align-items: center;
 }
 
+
 .hero h1 {
-    font-size: 48px;
+    font-size: 38px;
     font-weight: normal;
     line-height: 1.2;
-    margin-bottom: 8px;
+
+    margin-bottom: 18px;
 }
 
+
 .position {
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+
     font-size: 15px;
-    color: #666;
-    margin-bottom: 30px;
+    color: #666666;
+
+    margin-bottom: 28px;
 }
+
 
 .introduction {
     font-size: 18px;
@@ -85,79 +107,152 @@ body {
 }
 
 
-/* Photograph */
+/* ========================================
+   PHOTO
+======================================== */
 
 .hero-image img {
     width: 100%;
+    max-width: 320px;
+
     display: block;
+    margin: 0 auto;
+
     border-radius: 4px;
 }
 
 
-/* Sections */
+/* ========================================
+   GENERAL SECTIONS
+======================================== */
 
 .section {
     max-width: 850px;
     margin: 0 auto;
+
     padding: 65px 30px;
-    border-top: 1px solid #eee;
+
+    border-top: 1px solid #eeeeee;
 }
+
 
 .section h2 {
     font-size: 30px;
     font-weight: normal;
-    margin-bottom: 25px;
-}
 
-.section p {
-    margin-bottom: 18px;
-}
-
-.keywords {
-    color: #444;
+    margin-bottom: 28px;
 }
 
 
-/* CV */
+/* ========================================
+   SHORT CV
+======================================== */
 
-.cv {
-    margin-top: 25px;
+.cv-section {
+    text-align: center;
 }
 
-.cv-item {
-    display: grid;
-    grid-template-columns: 180px 1fr;
-    gap: 25px;
 
-    padding: 15px 0;
-    border-bottom: 1px solid #eee;
+.cv-text {
+    max-width: 720px;
+    margin: 0 auto;
+
+    font-size: 17px;
 }
 
-.date {
-    color: #666;
-    font-family: Arial, sans-serif;
+
+.cv-text p {
+    margin-bottom: 15px;
+}
+
+
+.cv-text a {
+    color: #555555;
+    text-decoration: none;
+
+    border-bottom: 1px solid #cccccc;
+}
+
+
+.cv-text a:hover {
+    color: #000000;
+    border-bottom-color: #000000;
+}
+
+
+/* ========================================
+   PUBLICATIONS
+======================================== */
+
+.publications-section {
+    max-width: 850px;
+}
+
+
+.publication-subsection {
+    margin-top: 40px;
+}
+
+
+.publication-subsection h3 {
+    font-size: 21px;
+    font-weight: normal;
+
+    margin-bottom: 22px;
+}
+
+
+.publication {
+    margin-bottom: 38px;
+}
+
+
+.publication p {
+    margin-bottom: 8px;
+}
+
+
+.publication-details {
+    color: #666666;
+    font-size: 15px;
+}
+
+
+.publication-link a {
+    color: #555555;
+    text-decoration: none;
+
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
 }
 
-.degree {
-    color: #222;
+
+.publication-link a:hover {
+    color: #000000;
+    text-decoration: underline;
 }
 
 
-/* Footer */
+/* ========================================
+   FOOTER
+======================================== */
 
 .footer {
     max-width: 850px;
     margin: 0 auto;
+
     padding: 45px 30px;
 
-    color: #888;
-    font-family: Arial, sans-serif;
+    color: #888888;
+
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
 }
 
 
-/* Mobile */
+/* ========================================
+   MOBILE
+======================================== */
 
 @media (max-width: 700px) {
 
@@ -165,35 +260,38 @@ body {
         padding: 18px 20px;
     }
 
+
     .nav-links {
         gap: 15px;
     }
 
+
     .hero {
         grid-template-columns: 1fr;
+
         padding: 60px 25px;
-        gap: 35px;
+
+        gap: 40px;
     }
+
 
     .hero h1 {
-        font-size: 40px;
+        font-size: 34px;
     }
 
+
     .hero-image {
-        max-width: 300px;
+        max-width: 320px;
     }
+
 
     .section {
         padding: 50px 25px;
     }
 
-    .cv-item {
-        grid-template-columns: 1fr;
-        gap: 3px;
-    }
-}
 
-    .nav-links {
-        gap: 12px;
+    .cv-text {
+        font-size: 16px;
     }
+
 }

@@ -1,3 +1,7 @@
+/* ========================================
+   GENERAL
+======================================== */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -6,16 +10,18 @@
 
 body {
     font-family: Georgia, "Times New Roman", serif;
-    color: #222;
-    background: #fff;
+    color: #222222;
+    background: #ffffff;
     line-height: 1.7;
 }
 
 
-/* HEADER */
+/* ========================================
+   HEADER
+======================================== */
 
 .header {
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #dddddd;
 }
 
 .navigation {
@@ -28,11 +34,17 @@ body {
     align-items: center;
 }
 
+
+/* Your name */
+
 .logo {
-    color: #222;
+    color: #222222;
     font-size: 21px;
     font-weight: bold;
 }
+
+
+/* Navigation links */
 
 .nav-links {
     display: flex;
@@ -40,27 +52,32 @@ body {
 }
 
 .nav-links a {
-    color: #555;
+    color: #555555;
     text-decoration: none;
+
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
 }
 
 .nav-links a:hover {
-    color: #000;
+    color: #000000;
 }
 
 
-/* WELCOME */
+/* ========================================
+   WELCOME / INTRODUCTION
+======================================== */
 
 .hero {
-    max-width: 1150px;
+    max-width: 1200px;
     margin: 0 auto;
+
     padding: 85px 30px;
 
     display: grid;
-    grid-template-columns: minmax(0, 1fr) 300px;
-    gap: 55px;
+    grid-template-columns: minmax(0, 1fr) 270px;
+
+    gap: 40px;
     align-items: center;
 }
 
@@ -72,80 +89,100 @@ body {
     font-size: 38px;
     font-weight: normal;
     line-height: 1.2;
+
     margin-bottom: 18px;
 }
 
 .position {
     font-family: Arial, Helvetica, sans-serif;
+
     font-size: 15px;
-    color: #666;
+    color: #666666;
+
     margin-bottom: 28px;
 }
 
 .introduction {
-    font-size: 18px;
+    font-size: 17px;
     line-height: 1.75;
-    max-width: 800px;
+
+    max-width: none;
+
     text-align: left;
 }
 
 
-/* PHOTO */
+/* ========================================
+   PHOTO
+======================================== */
 
 .hero-image {
-    width: 300px;
+    width: 270px;
     justify-self: end;
 }
 
 .hero-image img {
     width: 100%;
+
     display: block;
+
     border-radius: 4px;
 }
 
 
-/* SECTIONS */
+/* ========================================
+   GENERAL SECTIONS
+======================================== */
 
 .section {
     max-width: 850px;
     margin: 0 auto;
+
     padding: 65px 30px;
-    border-top: 1px solid #eee;
+
+    border-top: 1px solid #eeeeee;
 }
 
 .section h2 {
     font-size: 30px;
     font-weight: normal;
+
     margin-bottom: 28px;
 }
 
 
-/* SHORT CV */
+/* ========================================
+   SHORT CV
+======================================== */
 
 .cv-section {
-    text-align: center;
+    text-align: left;
 }
 
 .cv-text {
     max-width: 760px;
-    margin: 0 auto;
+    margin: 0;
+
     font-size: 17px;
     line-height: 1.8;
 }
 
 .cv-text a {
-    color: #555;
+    color: #555555;
     text-decoration: none;
-    border-bottom: 1px solid #ccc;
+
+    border-bottom: 1px solid #cccccc;
 }
 
 .cv-text a:hover {
-    color: #000;
-    border-bottom-color: #000;
+    color: #000000;
+    border-bottom-color: #000000;
 }
 
 
-/* PUBLICATIONS */
+/* ========================================
+   PUBLICATIONS
+======================================== */
 
 .publications-section {
     max-width: 850px;
@@ -158,11 +195,13 @@ body {
 .publication-subsection h3 {
     font-size: 21px;
     font-weight: normal;
+
     margin-bottom: 22px;
 }
 
 .publication {
     margin-bottom: 38px;
+
     line-height: 1.7;
 }
 
@@ -171,38 +210,44 @@ body {
 }
 
 .publication-details {
-    color: #666;
+    color: #666666;
     font-size: 15px;
 }
 
 .publication-link a {
-    color: #555;
+    color: #555555;
     text-decoration: none;
+
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
 }
 
 .publication-link a:hover {
-    color: #000;
+    color: #000000;
     text-decoration: underline;
 }
 
 
-/* FOOTER */
+/* ========================================
+   FOOTER
+======================================== */
 
 .footer {
     max-width: 850px;
     margin: 0 auto;
+
     padding: 45px 30px;
 
-    color: #888;
+    color: #888888;
 
     font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
 }
 
 
-/* MOBILE */
+/* ========================================
+   MOBILE
+======================================== */
 
 @media (max-width: 700px) {
 
@@ -216,7 +261,9 @@ body {
 
     .hero {
         grid-template-columns: 1fr;
+
         padding: 60px 25px;
+
         gap: 40px;
     }
 
@@ -227,6 +274,7 @@ body {
     .hero-image {
         width: 100%;
         max-width: 320px;
+
         justify-self: start;
     }
 
@@ -237,4 +285,5 @@ body {
     .cv-text {
         font-size: 16px;
     }
+
 }

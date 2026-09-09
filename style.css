@@ -8,11 +8,21 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Georgia, "Times New Roman", serif;
+
     color: #222222;
     background: #ffffff;
+
     line-height: 1.7;
+
+    transition:
+        color 0.3s ease,
+        background-color 0.3s ease;
 }
 
 
@@ -22,11 +32,15 @@ body {
 
 .header {
     border-bottom: 1px solid #dddddd;
+
+    transition:
+        border-color 0.3s ease;
 }
 
 .navigation {
-    max-width: 1150px;
+    max-width: 1200px;
     margin: 0 auto;
+
     padding: 22px 30px;
 
     display: flex;
@@ -35,32 +49,67 @@ body {
 }
 
 
-/* Your name */
+/* Name at top left */
 
 .logo {
     color: #222222;
+
     font-size: 21px;
     font-weight: bold;
+
+    transition: color 0.3s ease;
 }
 
 
-/* Navigation links */
+/* Navigation */
 
 .nav-links {
     display: flex;
-    gap: 28px;
+    align-items: center;
+    gap: 30px;
 }
 
 .nav-links a {
     color: #555555;
+
     text-decoration: none;
 
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
+
+    transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
     color: #000000;
+}
+
+
+/* ========================================
+   DARK MODE BUTTON
+======================================== */
+
+.dark-mode-toggle {
+    border: none;
+    background: transparent;
+
+    color: #555555;
+
+    font-size: 20px;
+    line-height: 1;
+
+    cursor: pointer;
+
+    padding: 2px 4px;
+
+    transition:
+        color 0.3s ease,
+        transform 0.2s ease;
+}
+
+.dark-mode-toggle:hover {
+    color: #000000;
+    transform: scale(1.1);
 }
 
 
@@ -75,9 +124,11 @@ body {
     padding: 85px 30px;
 
     display: grid;
+
     grid-template-columns: minmax(0, 1fr) 270px;
 
     gap: 40px;
+
     align-items: center;
 }
 
@@ -86,20 +137,27 @@ body {
 }
 
 .hero h1 {
+    color: #222222;
+
     font-size: 38px;
     font-weight: normal;
     line-height: 1.2;
 
     margin-bottom: 18px;
+
+    transition: color 0.3s ease;
 }
 
 .position {
     font-family: Arial, Helvetica, sans-serif;
 
     font-size: 15px;
+
     color: #666666;
 
     margin-bottom: 28px;
+
+    transition: color 0.3s ease;
 }
 
 .introduction {
@@ -118,6 +176,7 @@ body {
 
 .hero-image {
     width: 270px;
+
     justify-self: end;
 }
 
@@ -141,13 +200,19 @@ body {
     padding: 65px 30px;
 
     border-top: 1px solid #eeeeee;
+
+    transition: border-color 0.3s ease;
 }
 
 .section h2 {
+    color: #222222;
+
     font-size: 30px;
     font-weight: normal;
 
     margin-bottom: 28px;
+
+    transition: color 0.3s ease;
 }
 
 
@@ -169,13 +234,19 @@ body {
 
 .cv-text a {
     color: #555555;
+
     text-decoration: none;
 
     border-bottom: 1px solid #cccccc;
+
+    transition:
+        color 0.3s ease,
+        border-color 0.3s ease;
 }
 
 .cv-text a:hover {
     color: #000000;
+
     border-bottom-color: #000000;
 }
 
@@ -193,10 +264,14 @@ body {
 }
 
 .publication-subsection h3 {
+    color: #222222;
+
     font-size: 21px;
     font-weight: normal;
 
     margin-bottom: 22px;
+
+    transition: color 0.3s ease;
 }
 
 .publication {
@@ -211,19 +286,26 @@ body {
 
 .publication-details {
     color: #666666;
+
     font-size: 15px;
+
+    transition: color 0.3s ease;
 }
 
 .publication-link a {
     color: #555555;
+
     text-decoration: none;
 
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
+
+    transition: color 0.3s ease;
 }
 
 .publication-link a:hover {
     color: #000000;
+
     text-decoration: underline;
 }
 
@@ -242,6 +324,90 @@ body {
 
     font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
+
+    transition: color 0.3s ease;
+}
+
+
+/* ========================================
+   DARK MODE
+======================================== */
+
+body.dark-mode {
+    color: #e6e6e6;
+    background: #151515;
+}
+
+body.dark-mode .header {
+    border-bottom-color: #333333;
+}
+
+body.dark-mode .logo {
+    color: #f2f2f2;
+}
+
+body.dark-mode .nav-links a {
+    color: #aaaaaa;
+}
+
+body.dark-mode .nav-links a:hover {
+    color: #ffffff;
+}
+
+body.dark-mode .dark-mode-toggle {
+    color: #dddddd;
+}
+
+body.dark-mode .dark-mode-toggle:hover {
+    color: #ffffff;
+}
+
+body.dark-mode .hero h1 {
+    color: #f2f2f2;
+}
+
+body.dark-mode .position {
+    color: #aaaaaa;
+}
+
+body.dark-mode .section {
+    border-top-color: #333333;
+}
+
+body.dark-mode .section h2 {
+    color: #f2f2f2;
+}
+
+body.dark-mode .publication-subsection h3 {
+    color: #eeeeee;
+}
+
+body.dark-mode .cv-text a {
+    color: #cccccc;
+
+    border-bottom-color: #666666;
+}
+
+body.dark-mode .cv-text a:hover {
+    color: #ffffff;
+
+    border-bottom-color: #ffffff;
+}
+
+body.dark-mode .publication-details {
+    color: #aaaaaa;
+}
+
+body.dark-mode .publication-link a {
+    color: #bbbbbb;
+}
+
+body.dark-mode .publication-link a:hover {
+    color: #ffffff;
+}
+
+body.dark-mode .footer {
+    color: #777777;
 }
 
 
@@ -255,8 +421,20 @@ body {
         padding: 18px 20px;
     }
 
+    .logo {
+        font-size: 18px;
+    }
+
     .nav-links {
-        gap: 15px;
+        gap: 16px;
+    }
+
+    .nav-links a {
+        font-size: 13px;
+    }
+
+    .dark-mode-toggle {
+        font-size: 18px;
     }
 
     .hero {

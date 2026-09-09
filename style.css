@@ -16,7 +16,7 @@ body {
     font-family: Georgia, "Times New Roman", serif;
 
     color: #222222;
-    background: #ffffff;
+    background-color: #ffffff;
 
     line-height: 1.7;
 
@@ -33,8 +33,7 @@ body {
 .header {
     border-bottom: 1px solid #dddddd;
 
-    transition:
-        border-color 0.3s ease;
+    transition: border-color 0.3s ease;
 }
 
 .navigation {
@@ -49,7 +48,7 @@ body {
 }
 
 
-/* Name at top left */
+/* Name */
 
 .logo {
     color: #222222;
@@ -91,6 +90,8 @@ body {
 
 .dark-mode-toggle {
     border: none;
+    outline: none;
+
     background: transparent;
 
     color: #555555;
@@ -98,9 +99,9 @@ body {
     font-size: 20px;
     line-height: 1;
 
-    cursor: pointer;
-
     padding: 2px 4px;
+
+    cursor: pointer;
 
     transition:
         color 0.3s ease,
@@ -109,6 +110,7 @@ body {
 
 .dark-mode-toggle:hover {
     color: #000000;
+
     transform: scale(1.1);
 }
 
@@ -141,6 +143,7 @@ body {
 
     font-size: 38px;
     font-weight: normal;
+
     line-height: 1.2;
 
     margin-bottom: 18px;
@@ -162,6 +165,7 @@ body {
 
 .introduction {
     font-size: 17px;
+
     line-height: 1.75;
 
     max-width: none;
@@ -190,7 +194,7 @@ body {
 
 
 /* ========================================
-   GENERAL SECTIONS
+   SECTIONS
 ======================================== */
 
 .section {
@@ -226,9 +230,11 @@ body {
 
 .cv-text {
     max-width: 760px;
+
     margin: 0;
 
     font-size: 17px;
+
     line-height: 1.8;
 }
 
@@ -267,6 +273,7 @@ body {
     color: #222222;
 
     font-size: 21px;
+
     font-weight: normal;
 
     margin-bottom: 22px;
@@ -298,6 +305,7 @@ body {
     text-decoration: none;
 
     font-family: Arial, Helvetica, sans-serif;
+
     font-size: 14px;
 
     transition: color 0.3s ease;
@@ -316,6 +324,7 @@ body {
 
 .footer {
     max-width: 850px;
+
     margin: 0 auto;
 
     padding: 45px 30px;
@@ -323,6 +332,7 @@ body {
     color: #888888;
 
     font-family: Arial, Helvetica, sans-serif;
+
     font-size: 13px;
 
     transition: color 0.3s ease;
@@ -335,7 +345,8 @@ body {
 
 body.dark-mode {
     color: #e6e6e6;
-    background: #151515;
+
+    background-color: #151515;
 }
 
 body.dark-mode .header {
@@ -451,6 +462,7 @@ body.dark-mode .footer {
 
     .hero-image {
         width: 100%;
+
         max-width: 320px;
 
         justify-self: start;

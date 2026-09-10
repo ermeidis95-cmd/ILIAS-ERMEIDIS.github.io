@@ -68,21 +68,6 @@ body {
     gap: 30px;
 }
 
-.nav-links a {
-    color: #555555;
-
-    text-decoration: none;
-
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
-
-    transition: color 0.3s ease;
-}
-
-.nav-links a:hover {
-    color: #000000;
-}
-
 
 /* ========================================
    DARK MODE BUTTON
@@ -171,6 +156,12 @@ body {
     max-width: none;
 
     text-align: left;
+
+    margin-bottom: 18px;
+}
+
+.introduction:last-child {
+    margin-bottom: 0;
 }
 
 
@@ -291,6 +282,10 @@ body {
     margin-bottom: 8px;
 }
 
+.publication p strong {
+    font-weight: bold;
+}
+
 .publication-details {
     color: #666666;
 
@@ -319,6 +314,35 @@ body {
 
 
 /* ========================================
+   CONTACT
+======================================== */
+
+.contact-section {
+    max-width: 850px;
+
+    margin: 0 auto;
+
+    padding: 10px 30px 25px;
+
+    text-align: center;
+}
+
+.contact {
+    margin: 0;
+
+    color: #777777;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 13px;
+}
+
+.contact span {
+    color: #555555;
+}
+
+
+/* ========================================
    FOOTER
 ======================================== */
 
@@ -327,13 +351,15 @@ body {
 
     margin: 0 auto;
 
-    padding: 45px 30px;
+    padding: 25px 30px 45px;
 
     color: #888888;
 
     font-family: Arial, Helvetica, sans-serif;
 
     font-size: 13px;
+
+    text-align: center;
 
     transition: color 0.3s ease;
 }
@@ -355,14 +381,6 @@ body.dark-mode .header {
 
 body.dark-mode .logo {
     color: #f2f2f2;
-}
-
-body.dark-mode .nav-links a {
-    color: #aaaaaa;
-}
-
-body.dark-mode .nav-links a:hover {
-    color: #ffffff;
 }
 
 body.dark-mode .dark-mode-toggle {
@@ -417,6 +435,14 @@ body.dark-mode .publication-link a:hover {
     color: #ffffff;
 }
 
+body.dark-mode .contact {
+    color: #777777;
+}
+
+body.dark-mode .contact span {
+    color: #aaaaaa;
+}
+
 body.dark-mode .footer {
     color: #777777;
 }
@@ -438,10 +464,6 @@ body.dark-mode .footer {
 
     .nav-links {
         gap: 16px;
-    }
-
-    .nav-links a {
-        font-size: 13px;
     }
 
     .dark-mode-toggle {
@@ -474,6 +496,14 @@ body.dark-mode .footer {
 
     .cv-text {
         font-size: 16px;
+    }
+
+    .contact-section {
+        padding: 10px 25px 20px;
+    }
+
+    .footer {
+        padding: 25px 25px 35px;
     }
 
 }
